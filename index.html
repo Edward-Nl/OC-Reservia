@@ -11,27 +11,46 @@
 </head>
 <body>
 	<header>
-		<p><a href="logo2.png"><img src="logo.png" alt="Logo Reservia" title="Logo Reservia"></a></p>
 
-		<ul>
-			<li class="list-header">Hebergements</li>
-			<li>Activités</li>
-			<li class="list-header"><strong>S'inscrire</strong></li>
-		</ul>
+		<div class="logo_list">
+			<a href="logo2.png"><img src="logo.png" alt="Logo Reservia" title="Logo Reservia"></a>
 
-		<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-		<h4>En plein centre ville ou en pleine nature</h4>
+			<nav>
+				<ul class="list">
+					<li class="list_1 color_list heber">Hebergements</li>
+					<li class="list_1 list-nav">Activités</li>
+					<li class="list_1 color_list list-nav"><strong>S'inscrire</strong></li>
+				</ul>
+			</nav>
 
-		<p><i class="fas fa-map-marker-alt"></i><input type="text" value="Marseille, France" />Rechercher</p>
+		</div>
 
-		<ul>Filtres
-			<li><i class="fas fa-money-bill-wave"></i>Economique</li>
-			<li><i class="fas fa-child"></i>Familial</li>
-			<li><i class="fas fa-heart"></i>Romantique</li>
-			<li><i class="fas fa-dog"></i>Animaux autorisés</li>
-		</ul>
+		<p class="trouve"><span class="trv">Trouvez votre hébergement pour des vacances de rêve</span><br />
+		En plein centre ville ou pleine nature</p>
 
-		<p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+		<div class="recherche">
+			<div class="fnt-gris">
+				<i id="map" class="fas fa-map-marker-alt"></i>
+			</div>
+			<p id="marseille">Marseille, France</p>
+			<div class="fnt-bre">
+				<span id="recherche">Rechercher</span>
+			</div>
+		</div>
+
+		<div class="filtre">
+			<span><strong>Filtres</strong></span>
+				<ul class="list">
+					<div class="bouton"><div class="fnt-bleu"><i id="btn" class="fas fa-money-bill-wave btn-bleu"></i></div><span id="flt">Economique</span></div>
+					<div class="bouton"><div class="fnt-bleu"><i id="btn" class="fas fa-child btn-bleu"></i></div><span id="flt">Familial</span></div>
+					<div class="bouton"><div class="fnt-bleu"><i id="btn" class="fas fa-heart btn-bleu"></i></div><span id="flt">Romantique</span></div>
+					<div class="bouton"><div class="fnt-bleu"><i id="btn" class="fas fa-dog btn-bleu"></i></div><span id="flt">Animaux autorisés</span></div>
+
+				</ul>
+		</div>
+
+		<p><div class="i"><i class="fas fa-info"></i><span class="plus">Plus de 500 logements sont disponibles dans cette ville</span></div></p>
+
 	</header>
 
 <main>
@@ -150,27 +169,33 @@
 
 </main>
 
-	<footer>
-		<p>
-			<ul>A propos
-				<li>Fonctionnement du site</li>
-				<li>Conditions générales de vente</li>
-				<li>Données et confidentialité</li>
-			</ul>
-		</p>
+		<footer>
+		<div class="pied">
+			<div class="a_propos pied2">
+				<ul>
+					<span class="t-gras">A propos</span><br /><br />
+					<li>Fonctionnement du site</li>
+					<li>Conditions génerales de vente</li>
+					<li>Données et confidentialité</li>
+				</ul>
+			</div>
 
-		<p>
-			<ul>Nos hébergements
-				<li>Charte qualité</li>
-				<li>Soumettre votre hôtel</li>
-			</ul>
-		</p>
+			<div class="nos-hebergement pied2">
+				<ul>
+					<span class="t-gras">Nos hébergements</span><br /><br />
+					<li>Charte qualité</li>
+					<li>Soumettre vos hôtel</li>
+				</ul>
+			</div>
 
-		<p>
-			<ul>Assistance
-				<li>Centre d'aide</li>
-				<li>Nous contacter</li></ul>
-		</p>
+			<div class="assistance pied2">
+				<ul>
+					<span class="t-gras">Assistance</span><br /><br />
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 
 </body>
