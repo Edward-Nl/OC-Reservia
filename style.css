@@ -37,6 +37,9 @@ a{
 			/* Fin de header */
 			
 			/* Champ de recherche */
+h1{
+	margin-bottom: 10px;
+}
 
 form{
 	border: 1px #f2f2f2 solid;
@@ -109,6 +112,9 @@ button:hover{
 	background-color: #deebff;
 	border: 2px #deebff solid;
 }
+button:focus{
+	outline: 0;
+}
 
 .ftn_icon_filtre{
 	background-color: #deebff;
@@ -141,12 +147,21 @@ button:hover{
 
 
 		/* Vignette Hebergement */
+.h2_marg{
+	margin-bottom: 5px;
+	margin-top: 45px;
+}
+
 .section_hebergement{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-content: space-around;
 }
+figure{
+	box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.1);
+}
+
 .box_hebergement{
 	background-color: #f2f2f2;
 	width: 880px;
@@ -326,6 +341,5 @@ footer{
 
 
 
-.trouve{
-	line-height: 150%;
-}
+
+
