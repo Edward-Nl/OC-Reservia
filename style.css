@@ -13,7 +13,7 @@ header{
 	align-items: flex-end;
 	height: 85px;
 }
-.list_nav{
+.nav{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -30,13 +30,9 @@ li{
 a{
 	text-decoration: none;
 	color: inherit;
-}
-.color_list{
-	color: #0065fc;
-}
-			/* Fin de header */
+}                          /* Fin de header */
 			
-			/* Champ de recherche */
+						   /* Champ de recherche */
 h1{
 	margin-bottom: 10px;
 }
@@ -62,14 +58,14 @@ form{
 	justify-content: center;
 	align-items: center;
  }
-.input_text{
+.champ_recherche{
 	border: 1px #f2f2f2 solid;
 	height: 47px;
 	width: 234px;
 	font-weight: bold;
 	font-size: 1.1em;
 }
-.input_btn{
+.btn_recherche{
 	border: 1px #0065fc solid;
 	border-top-right-radius: 9px;
 	border-bottom-right-radius: 9px;
@@ -78,13 +74,10 @@ form{
 	background-color: #0065fc;
 	color: white;
 	font-size: 1.1em;
-}				
+}						/* fin de recherche  */
+						/* Bouton filtre  */
 
-			/* fin de recherche  */
-			
-			/* Bouton filtre  */
-
-.filtre{
+.filtres{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -107,16 +100,6 @@ button{
 	font-weight: bold;
 	font-size: 1.1em;
 }
-
-button:hover{
-	color: #0065fc;
-	background-color: #deebff;
-	border: 2px #deebff solid;
-}
-button:focus{
-	outline: 0;
-}
-
 .ftn_icon_filtre{
 	background-color: #deebff;
 	color: #0065fc;
@@ -129,10 +112,21 @@ button:focus{
 	align-items: center;
 	margin-right: 13px;
 }
-
-		/*Fin bouton filtre */
-
-
+button:hover{
+	color: #0065fc;
+	transform: scale(1.09);
+	box-shadow: 20px 10px 25px -6px rgba(0,0,0,0.2);
+	background-color: #deebff;
+	border: 1px #deebff solid;
+	display: flex;
+	flex-direction: row-reverse;
+	padding-left: 20px;
+	padding-right: 0;
+}
+button:focus{
+	outline: 0;
+}
+					/*Fin bouton filtre */
 .fa-info{
 	border: 0.01em #d9d9d9 solid;
 	padding: 6px 10px 6px 10px;
@@ -140,30 +134,27 @@ button:focus{
 	margin-right: 15px;
 	color: #0065fc;
 }
-
 .p_500{
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
-
-
-		/* Vignette Hebergement */
-.h2_marg{
-	margin-bottom: 5px;
-	margin-top: 45px;
-}
-
-.section_hebergement{
+					/*section qui englobe hebergement et populaire */
+.sect_tout_hebergement{  
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-content: space-around;
 }
-figure{
-	box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.1);
+.h2_marg{
+	margin-bottom: 5px;
+	margin-top: 45px;
 }
 
-.box_hebergement{
+figure{   /* ombre commune a toute les figure du site */
+	box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.1);
+}
+						/* box h2 vignette et p de hebergement */
+.box_hebergement{  
 	background-color: #f2f2f2;
 	width: 880px;
 	height: 626px;
@@ -172,13 +163,18 @@ figure{
 	border-radius: 18px;
 	margin-right: 40px;
 }
-.ctn_vignette{
+.text_hebergement{
+	font-weight: bold;
+	margin-left: 40px;
+}
+					/* qui contient les 6 figures hebergement */
+.ctn_vignettes_hebergement{			
 	margin-left: 25px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.vignette-heberg{
+.vignette_hebergement{
 	border: 5px white solid;
 	border-radius: 18px;
 	width: 235px;
@@ -186,44 +182,49 @@ figure{
 	margin: 15px;
 	background-color: white;
 }
-.img_heberg{
+.img_hebergement{
 	width: 235px;
 	height: 114px;
 	margin: 0;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
-.figcap_heberg{
+.figcap_hebergement{
 	width: 235px;
 	height: 76px;
 	margin: 0;
 	line-height: 35%;
 	font-size: 0.9em;
 }
-.text_heberg{
-	font-weight: bold;
-	margin-left: 40px
-}
+				/* icon */
 .fa-star{
 	font-size: 0.8em;
 }
-.blue_star{  /* icon etoiles bleu */
+.color_blue{
 	color: #0065fc;
 }
 
 .grey_star{
 	color: #d9d9d9;
 }
-
-.box-populaire{
+				/* Qui contient les vignette populaire */
+.box_populaire{
 	background-color: #f2f2f2;
 	height: 626px;
 	width: 420px;
 	border-radius: 18px;
 }
-
-
-.vignette-popu{
+.titre_populaire{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	font-weight: bold;
+}
+.fa-chart-line{
+	font-size: 1.4em;
+}
+.vignette_populaire{
 	width: 333px;
 	height: 134px;
 	border: 5px white solid;
@@ -233,62 +234,48 @@ figure{
 	display: flex;
 	flex-direction: row;
 }
-
-.img_popu{
+.img_populaire{
 	width: 127px;
 	height: 134px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
-.figcap_popu{
+.figcap_populaire{
 	padding-left: 20px;
 	font-size: 0.9em;
 	line-height: 120%;
-}
-
-.titre_popu{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: baseline;
-	font-weight: bold;
-}
-
-.fa-chart-line{
-	font-size: 1.4em;
 }
 
 			/* ACTIVITES  */
 .h2_act{
 	margin-top: 65px;
 }
-
-.box-activité{
+.box_activité{
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 60px;
 }
-.box-activité2{
+.box_activité2{
 	display: flex;
 	flex-direction: column;
 }
-.vignette-act1, .vignette-act2, .vignette-act3{
+.vignette_act1, .vignette_act2, .vignette_act3{
 	width: 301px;
 	border: 1px #f2f2f2 solid;
 	border-radius: 18px;
 	display: block;
 	margin: 0;
 }
-.vignette-act1, .margin_right{
+.vignette_act1, .margin_right{
 	margin-right: 45px;
 }
-.vignette-act1{
+.vignette_act1{
 	height: 446px;
 }
-.vignette-act2{
+.vignette_act2{
 	height: 223px;
 }
-.vignette-act3{
+.vignette_act3{
 	height: 178px;
 }
 .img_act1, .img_act2, .img_act3{
@@ -305,11 +292,12 @@ figure{
 .img_act3{
 	height: 123px;
 }
-
-.figcap_act{
+.figcap_activité{
 	height: 55px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	margin: 0;
 }
-
 .margin_bottom{
 	margin-bottom: 43px;
 }
@@ -338,9 +326,3 @@ footer{
 	align-items: flex-start;
 	line-height: 2;
 }
-
-
-
-
-
-
