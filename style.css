@@ -338,6 +338,7 @@ footer{
 		flex-direction: column;
 		align-items: flex-start;
 		margin-left: 0px;
+		height: auto;
 	}
 	main{
 		margin-left: -8px;
@@ -347,11 +348,13 @@ footer{
 	}
 	.filtres{
 		margin-left: 20px;
+		flex-wrap: wrap;
+	}
+	.h3_flt{
+		margin-right: 150px;
 	}
 	.p_500{
-		flex-wrap: wrap;
-		width: auto;
-		overflow: hidden;
+		margin-left: 20px;
 	}
 	.sect_tout_hebergement{
 		flex-direction: column-reverse;
@@ -415,5 +418,32 @@ footer{
 	.h2_marg, .text_hebergement{
 		margin-left: 0;
 		padding-left: 20px;
+	}
+	.fa-info{
+		float: left;
+	}
+	nav{
+		display: flex;
+	}
+	.bord_li{
+		width: 50%;
+		border-top: none;
+		padding-top: 25px;
+		padding-bottom: 15px;
+		border-bottom: 3px #0065fc solid;
+	}
+	.bord_gris{
+		width: 50%;
+		padding-bottom: 15px;
+		border-bottom: 3px #deebff solid;
+	}
+	.nav{
+		padding: 0;
+	}
+	button{
+		margin-right: 10px;
+		margin-bottom: 13px;
+		padding-right: 5px;
+
 	}
 }
