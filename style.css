@@ -74,7 +74,10 @@ form{
 	background-color: #0065fc;
 	color: white;
 	font-size: 1.1em;
-}						/* fin de recherche  */
+}
+.btn_recherche, .champ_recherche, button:focus{
+	outline: 0;
+	}					/* fin de recherche  */
 						/* Bouton filtre  */
 
 .filtres{
@@ -100,7 +103,7 @@ button{
 	font-weight: bold;
 	font-size: 1.1em;
 }
-.ftn_icon_filtre{
+i.ftn_icon_filtre{
 	background-color: #deebff;
 	color: #0065fc;
 	height: 48px;
@@ -111,6 +114,7 @@ button{
 	justify-content: center;
 	align-items: center;
 	margin-right: 13px;
+	margin-left: -2px;
 }
 button:hover{
 	color: #0065fc;
@@ -123,9 +127,7 @@ button:hover{
 	padding-left: 20px;
 	padding-right: 0;
 }
-button:focus{
-	outline: 0;
-}
+
 					/*Fin bouton filtre */
 .fa-info{
 	border: 0.01em #d9d9d9 solid;
@@ -185,6 +187,7 @@ figure{   /* ombre commune a toute les figure du site */
 .img_hebergement{
 	width: 235px;
 	height: 114px;
+	object-fit: cover;
 	margin: 0;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -209,6 +212,8 @@ figure{   /* ombre commune a toute les figure du site */
 }
 				/* Qui contient les vignette populaire */
 .box_populaire{
+	display: flex;
+	flex-direction: column;
 	background-color: #f2f2f2;
 	height: 626px;
 	width: 420px;
@@ -230,13 +235,13 @@ figure{   /* ombre commune a toute les figure du site */
 	border: 5px white solid;
 	border-radius: 18px;
 	background-color: white;
-	margin-bottom: 30px;
 	display: flex;
 	flex-direction: row;
 }
 .img_populaire{
 	width: 127px;
 	height: 134px;
+	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
@@ -283,15 +288,11 @@ figure{   /* ombre commune a toute les figure du site */
 	border-top-left-radius: 18px;
 	border-top-right-radius: 18px;
 }
-.img_act1{
-	height: 391px;
+.img_act1, .img_act2, .img_act3{
+	height: calc(100% - 55px);
+	object-fit: cover;
 }
-.img_act2{
-	height: 168px;
-}
-.img_act3{
-	height: 123px;
-}
+
 .figcap_activité{
 	height: 55px;
 	padding-bottom: 25px;
@@ -325,4 +326,94 @@ footer{
 	justify-content: flex-start;
 	align-items: flex-start;
 	line-height: 2;
+}
+		/* MEDIA QUERIES */
+@media screen and (max-device-width: 480px){
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 0px;
+	}
+	main{
+		margin-left: -8px;
+	}
+	.recherche{
+		flex-wrap: wrap;
+	}
+	.filtres{
+		margin-left: 20px;
+	}
+	.p_500{
+		flex-wrap: wrap;
+		width: auto;
+		overflow: hidden;
+	}
+	.sect_tout_hebergement{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: 100%;
+	}
+	.box_populaire{
+		border-radius: 0;
+		display: block;
+	}
+	.box_hebergement{
+		height: 100%;
+		background-color: white;
+	}
+	.ctn_vignettes_hebergement{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-left: 0;
+	}
+	.box_activité{
+		flex-direction: column;
+		margin-bottom: 25px;
+		padding-left: 20px;
+	}
+	footer{
+		flex-direction: column;
+		margin-left: -8px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	.foot_h3{
+		margin-left: 20px;
+	}
+	.foot_list{
+		margin: 0;
+		margin-left: -55px;
+	}
+	.vignette_populaire, .vignette_hebergement, .vignette_act1, .vignette_act2, .vignette_act3, .img_hebergement, .img_act1, .img_act2, .img_act3{
+		width: 324px;
+	}
+	.titre_populaire{
+		width: 334px;
+		justify-content: space-between;
+	}
+	.vignette_populaire{
+		height: 134px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+	.vignette_hebergement{
+		height: 190px;
+		margin-bottom: 10px;
+	}
+	.vignette_act1, .vignette_act2, .vignette_act3{
+		height: 190px;
+		margin-bottom: 25px;
+	}
+	.h2_act{
+		padding-left: 20px;
+	}
+	.h2_marg, .text_hebergement{
+		margin-left: 0;
+		padding-left: 20px;
+	}
 }

@@ -47,22 +47,22 @@
 			<h3 class="h3_flt">Filtres</h3>   <!-- changer les div dans les button -->
 
 			<button name="Economique" type="button">
-				<div class="ftn_icon_filtre"><i class="fas fa-money-bill-wave"></i></div>
+				<i class="fas fa-money-bill-wave ftn_icon_filtre"></i>
 				Economique
 			</button>
 
 			<button name="Familial" type="button">
-				<div class="ftn_icon_filtre"><i class="fas fa-child"></i></div>
+				<i class="fas fa-child ftn_icon_filtre"></i>
 				Familial
 			</button>
 
 			<button name="Romantique" type="button">
-				<div class="ftn_icon_filtre"><i class="fas fa-heart"></i></div>
+				<i class="fas fa-heart ftn_icon_filtre"></i>
 				Romantique
 			</button>
 
 			<button name="Animaux" type="button">
-				<div class="ftn_icon_filtre"><i class="fas fa-dog"></i></div>
+				<i class="fas fa-dog ftn_icon_filtre"></i>
 				Animaux autorisés
 			</button>	
 
@@ -70,13 +70,13 @@
 
 		<p class="p_500"><i class="fas fa-info "></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-		<section class="sect_tout_hebergement">
+		<div class="sect_tout_hebergement">
 			
-			<article class="box_hebergement">   <!-- revoir et changer le format des images, changement de aside a article -->
+			<section class="box_hebergement">   <!-- revoir et changer le format des images, changement de aside a article -->
 
 				<h2 class="text_hebergement h2_marg" id="ancre_heberg">Hébergements à Marseille</h2>
 
-				<div class="ctn_vignettes_hebergement">
+				<article class="ctn_vignettes_hebergement">
 					<a href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/aubergecannebiere.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière" class="img_hebergement">
@@ -142,15 +142,15 @@
 							</figcaption>
 						</figure>
 					</a>
-				</div>
+				</article>
 				<p class="text_hebergement">Afficher plus</p>
 
-			</article>
+			</section>
 
-			<article class="box_populaire">   <!-- revoir et changer le format des images, changement de aside a article -->
+			<section class="box_populaire">   <!-- revoir et changer le format des images, changement de aside a article -->
 			
 				<div class="titre_populaire"><h2 class="h2_marg">Les plus populaires</h2><i class="fas fa-chart-line icon-black"></i></div>
-
+				
 				<a href="">
 					<figure class="vignette_populaire">
 						<img src="hebergement/hotelmatin.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin" class="img_populaire">
@@ -183,8 +183,9 @@
 						</figcaption>
 					</figure>
 				</a>
-			</article>
-		</section>
+
+			</section>
+		</div>
 
 		<h2 class="h2_act" id="ancre_act">Activités à Marseille</h2>
 
