@@ -367,11 +367,11 @@ footer{
 		display: flex;
 		
 	}
-	li{
+	.li_nav{
 		padding: 0;
 		text-align: center;
 	}
-	ul{
+	.nav{
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
 	}
