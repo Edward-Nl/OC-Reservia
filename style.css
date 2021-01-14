@@ -354,44 +354,65 @@ footer{
 	}
 	main{
 		margin-left: 12px;
+		width: 100%;
 	}
 	header{
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
 		margin-left: 0px;
 		height: auto;
 		width: 100%;
 	}
-	
+	.img_logo{
+		padding: 20px;
+	}
 	nav{
 		display: flex;
+		width: 100%;
 		
 	}
 	.li_nav{
 		padding: 0;
 		text-align: center;
+		width: 33%;
 	}
 	.nav{
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.sinscrire{
+		position: absolute;
+		top: 3em;
+		left: 18em;
 	}
 	.bord_li{
 		border-top: none;
+		position: absolute;
+		left: 0;
+		justify-content: center;
 		width: 50%;
-		padding-top: 25px;
 		padding-bottom: 15px;
 		border-bottom: 3px #0065fc solid;
 	}
 	.bord_gris{
 		width: 50%;
+		position: absolute;
+		right: 0;
+		justify-content: center;
 		padding-bottom: 15px;
 		border-bottom: 3px #deebff solid;
 	}
-	.nav{
-		padding: 0;
+	h1, .trouve{
+		width: 100%;
 	}
+	
 	.recherche{
 		flex-wrap: wrap;
+		width: 100%;
 	}
 	form{
 		width: 100%;
@@ -417,6 +438,7 @@ footer{
 
 	.filtres{
 		flex-wrap: wrap;
+		width: 100%;
 	}
 	button{
 		margin-right: 10px;
@@ -438,7 +460,7 @@ footer{
 	.box_populaire{
 		border-radius: 0;
 		display: block;
-		width: auto;
+		width: 100%;
 	}
 	.titre_populaire{
 		width: 334px;
@@ -451,6 +473,8 @@ footer{
 	}
 	.box_hebergement{
 		height: 100%;
+		width: 100%;
+		margin: 0;
 		background-color: white;
 	}
 	
