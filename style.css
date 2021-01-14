@@ -12,6 +12,7 @@ header{
 	justify-content: space-between;
 	align-items: flex-end;
 	height: 85px;
+	width: auto;
 }
 .nav{
 	display: flex;
@@ -19,13 +20,16 @@ header{
 	align-items: baseline;
 }
 li{
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
 	padding-right: 32px;
 	padding-left: 32px;
+	
 }
 .bord_li{
-	border-top: 2px #0065fc solid;
-	padding-top: 56px;
+	border-top: 3px #0065fc solid;
+	padding-top: 55px;
 }
 a{
 	text-decoration: none;
@@ -59,8 +63,8 @@ form{
 	align-items: center;
  }
 .champ_recherche{
-	border: 1px #f2f2f2 solid;
-	height: 47px;
+	border: 1px white solid;
+	height: 45px;
 	width: 234px;
 	font-weight: bold;
 	font-size: 1.1em;
@@ -75,6 +79,9 @@ form{
 	color: white;
 	font-size: 1.1em;
 }
+.btn_loupe{
+	display: none;
+}
 .btn_recherche, .champ_recherche, button:focus{
 	outline: 0;
 	}					/* fin de recherche  */
@@ -84,10 +91,16 @@ form{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
+	flex-wrap: wrap;
 	margin-top: 30px;
 }
 .h3_flt{
 	margin-right: 32px;
+}
+.ctn_button{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 button{
 	margin-right: 25px;
@@ -139,6 +152,7 @@ button:hover{
 .p_500{
 	margin-top: 35px;
 	margin-bottom: 35px;
+	flex-wrap: wrap;
 }
 					/*section qui englobe hebergement et populaire */
 .sect_tout_hebergement{  
@@ -158,8 +172,10 @@ figure{   /* ombre commune a toute les figure du site */
 						/* box h2 vignette et p de hebergement */
 .box_hebergement{  
 	background-color: #f2f2f2;
-	width: 880px;
-	height: 626px;
+	width: 70%;
+	max-width: 880px;
+	height: 100%;
+	min-height: 626px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 18px;
@@ -216,7 +232,8 @@ figure{   /* ombre commune a toute les figure du site */
 	flex-direction: column;
 	background-color: #f2f2f2;
 	height: 626px;
-	width: 420px;
+	width: 30%;
+	max-width: 420px;
 	border-radius: 18px;
 }
 .titre_populaire{
@@ -257,6 +274,7 @@ figure{   /* ombre commune a toute les figure du site */
 }
 .box_activité{
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	margin-bottom: 60px;
 }
@@ -310,17 +328,17 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin: 0;
 }
 
 .foot_h3{
-	margin-left: 75px;
 	margin-top: 45px;
 }
 
 .foot_list{
-	margin-right: 210px;
 	margin-bottom: 30px;
+	margin-left: -70px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -328,56 +346,123 @@ footer{
 	line-height: 2;
 }
 		/* MEDIA QUERIES */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
 	body{
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+	}
+	main{
+		margin-left: 12px;
 	}
 	header{
-		display: flex;
-		flex-direction: column;
 		align-items: flex-start;
 		margin-left: 0px;
 		height: auto;
 	}
-	main{
-		margin-left: -8px;
+	.img_logo{
+		float: left;
+	}
+	nav{
+		display: flex;
+	}
+	.bord_li{
+		border-top: none;
+		padding-top: 25px;
+		padding-bottom: 15px;
+		border-bottom: 3px #0065fc solid;
+	}
+	.bord_gris{
+		padding-bottom: 15px;
+		border-bottom: 3px #deebff solid;
+	}
+	.nav{
+		padding: 0;
 	}
 	.recherche{
 		flex-wrap: wrap;
 	}
+	form{
+		width: 100%;
+		max-width: 333px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.btn_recherche{
+		display: none;
+	}
+	.btn_loupe{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px #0065fc solid;
+		border-radius: 20px;
+		width: 50px;
+		height: 50px;
+		background-color: #0065fc;
+		color: white;
+		font-size: 1.1em;
+	}
+
 	.filtres{
-		margin-left: 20px;
 		flex-wrap: wrap;
 	}
-	.h3_flt{
-		margin-right: 150px;
+	button{
+		margin-right: 10px;
+		margin-bottom: 13px;
+		padding-right: 5px;
 	}
-	.p_500{
-		margin-left: 20px;
+	.fa-info{
+		float: left;
 	}
 	.sect_tout_hebergement{
 		flex-direction: column-reverse;
 		align-items: flex-start;
 		height: 100%;
+		margin-left: -20px;
+	}
+	.vignette_populaire, .vignette_hebergement, .vignette_act1, .vignette_act2, .vignette_act3, .img_hebergement, .img_act1, .img_act2, .img_act3{
+		width: 324px;
 	}
 	.box_populaire{
 		border-radius: 0;
 		display: block;
+		width: auto;
+	}
+	.titre_populaire{
+		width: 334px;
+		justify-content: space-between;
+	}
+	.vignette_populaire{
+		height: 134px;
+		margin-left: 20px;
+		margin-bottom: 10px;
 	}
 	.box_hebergement{
 		height: 100%;
 		background-color: white;
 	}
+	
 	.ctn_vignettes_hebergement{
 		flex-direction: column;
 		flex-wrap: nowrap;
 		margin-left: 0;
 	}
+	.vignette_hebergement{
+		height: 190px;
+		margin-bottom: 10px;
+	}
+	.h2_marg, .text_hebergement{
+		margin-left: 0;
+		padding-left: 20px;
+	}
 	.box_activité{
 		flex-direction: column;
 		margin-bottom: 25px;
-		padding-left: 20px;
+	}
+	.vignette_act1, .vignette_act2, .vignette_act3{
+		height: 190px;
+		margin-bottom: 25px;
 	}
 	footer{
 		flex-direction: column;
@@ -392,58 +477,15 @@ footer{
 		margin: 0;
 		margin-left: -55px;
 	}
-	.vignette_populaire, .vignette_hebergement, .vignette_act1, .vignette_act2, .vignette_act3, .img_hebergement, .img_act1, .img_act2, .img_act3{
-		width: 324px;
-	}
-	.titre_populaire{
-		width: 334px;
-		justify-content: space-between;
-	}
-	.vignette_populaire{
-		height: 134px;
-		margin-left: 20px;
-		margin-bottom: 10px;
-	}
-	.vignette_hebergement{
-		height: 190px;
-		margin-bottom: 10px;
-	}
-	.vignette_act1, .vignette_act2, .vignette_act3{
-		height: 190px;
-		margin-bottom: 25px;
-	}
-	.h2_act{
-		padding-left: 20px;
-	}
-	.h2_marg, .text_hebergement{
-		margin-left: 0;
-		padding-left: 20px;
-	}
-	.fa-info{
-		float: left;
-	}
-	nav{
-		display: flex;
-	}
-	.bord_li{
-		width: 50%;
-		border-top: none;
-		padding-top: 25px;
-		padding-bottom: 15px;
-		border-bottom: 3px #0065fc solid;
-	}
-	.bord_gris{
-		width: 50%;
-		padding-bottom: 15px;
-		border-bottom: 3px #deebff solid;
-	}
-	.nav{
-		padding: 0;
-	}
-	button{
-		margin-right: 10px;
-		margin-bottom: 13px;
-		padding-right: 5px;
-
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
