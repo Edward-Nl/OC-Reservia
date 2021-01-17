@@ -431,9 +431,6 @@ footer{
 
 @media screen and (max-width: 500px){
 	body{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
 		margin: 0;
 	}
 	main{
@@ -457,7 +454,6 @@ footer{
 	.li_nav{
 		padding: 0;
 		text-align: center;
-		width: 33%;
 	}
 	.nav{
 		width: 100%;
@@ -470,7 +466,6 @@ footer{
 		left: 18em;
 	}
 	.bord_li{
-		border-top: none;
 		position: absolute;
 		left: 0;
 		justify-content: center;
@@ -517,12 +512,10 @@ footer{
 	}
 
 	.filtres{
-		flex-wrap: wrap;
 		width: 100%;
 	}
 	button{
 		margin-right: 10px;
-		margin-bottom: 13px;
 		padding-right: 5px;
 	}
 	.sect_tout_hebergement{
@@ -537,10 +530,8 @@ footer{
 		border-radius: 0;
 		display: flex;
 		justify-content: center;
-		width: 100%;
 	}
 	.titre_populaire{
-		width: 334px;
 		justify-content: space-between;
 		margin: 0;
 	}
@@ -549,15 +540,11 @@ footer{
 		margin-left: 0;
 	}
 	.vignette_populaire{
-		height: 134px;
 		margin-left: 20px;
 		margin-bottom: 10px;
 	}
 	.box_hebergement{
 		align-items: center;
-		height: 100%;
-		width: 100%;
-		margin: 0;
 		background-color: white;
 	}
 	
@@ -567,7 +554,6 @@ footer{
 		margin-left: 0;
 	}
 	.vignette_hebergement{
-		height: 190px;
 		margin-bottom: 10px;
 		margin-left: 0;
 		margin-right: 0;
