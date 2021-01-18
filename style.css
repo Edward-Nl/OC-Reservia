@@ -466,18 +466,23 @@ footer{
 	button{
 		margin-right: 10px;
 	}
+	.btn_romantique{
+		margin-right: 20px;
+	}
 	.sect_tout_hebergement{
 		width: auto;
 		margin-left: -20px;
 	}
 	.vignette_populaire, .vignette_hebergement, .vignette_act1, .vignette_act2, .vignette_act3, .img_hebergement, .img_act1, .img_act2, .img_act3, .h2_marg, .text_hebergement{
-		width: 324px;
+		max-width: 324px;
+		width: 100%;
 	}
 	.box_populaire{
 		border-radius: 0;
 	}
 	.ctn_populaire{
 		margin-left: 0;
+		width: 100%;
 	}
 	.h2_marg, .text_hebergement{
 		margin-left: 0;
