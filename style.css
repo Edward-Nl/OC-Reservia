@@ -278,6 +278,7 @@ figure{   /* ombre commune a toute les figure du site */
 .ctn_activité{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 .ctn_act_left, .ctn_act_right{
 	display: flex;
@@ -347,20 +348,21 @@ footer{
 		/* MEDIA QUERIES */
 @media screen and (max-width: 1120px){
 	header{
-		align-items: flex-start;
-		flex-direction: column;
 		height: auto;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.img_logo{
+		padding-left: 25px;
 	}
 	ul.nav{
 		padding-left: 0;
 	}
-	.nav{
-		border-top: 3px #0099fc solid;
-	}
-	.bord_li{
+	.bord_li, .bord_gris{
+		padding-top: 15px;
+		padding-bottom: 15px;
 		border-top: none;
-		padding: 30px;
-		padding-bottom: 0;
+		border-right: 2px #deebff solid;
 	}
 	button{
 		margin-bottom: 13px;
@@ -396,6 +398,23 @@ footer{
 		width: 100%;
 		margin: 0;
 	}
+	.ctn_vignettes_hebergement{
+		margin: 0;
+	}
+	.lien_vign{
+		margin: auto;
+	}
+	.h2_act{
+		margin-left: 40px;
+	}
+	.vignette_act1, .vignette_act2, .vignette_act3{
+		height: 250px;
+		margin-right: 0;
+	}
+	.ctn_act_left, .ctn_act_right{
+		flex-direction: column;
+		margin: auto;
+	}
 	footer{
 		justify-content: space-between;
 		padding-left: 50px;
@@ -415,6 +434,9 @@ footer{
 		background-color: white;
 		margin-left: 0;
 		height: 148px;
+		align-items: flex-start;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
 	.img_logo{
 		padding: 20px;
@@ -440,6 +462,8 @@ footer{
 		width: 50%;
 		padding-bottom: 15px;
 		border-bottom: 3px #0065fc solid;
+		border-top: none;
+		border-right: none;
 	}
 	.bord_gris{
 		border-bottom: 3px #deebff solid;
