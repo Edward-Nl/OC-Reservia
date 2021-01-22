@@ -18,7 +18,7 @@
 		<a href="logo2.png"><img class="img_logo" src="logo.png" alt="Logo Reservia" title="Logo Reservia"></a>
 
 		<nav>
-			<ul class="nav">
+			<ul class="list_nav">
 				<li class="color_blue bord_li li_nav"><a href="#ancre_heberg">Hebergements</a></li>
 				<li class="bord_gris li_nav"><a href="#ancre_act">Activités</a></li>
 				<li class="color_blue li_nav sinscrire"><strong>S'inscrire</strong></li>
@@ -29,9 +29,9 @@
 
 	<main>
 
-		<section class="recherche">  
+		<section class="section_recherche">  
 
-			<div class="trouve"><h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<div><h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				En plein centre ville ou pleine nature</div>
 			
 
@@ -41,51 +41,52 @@
 				<div>
 					<input class="btn_recherche" type="submit" value="Rechercher" id="btn_search" />
 				</div>
-				<div class="btn_loupe">
-					<i class="fas fa-search"></i>
+				<div>
+					<button class="btn_loupe" type="submit"><i class="fas fa-search"></i></button>
 				</div>
+				
 			</form>
 
 		</section>
 
-		<section class="filtres">
+		<section class="section_filtres">
 			
-			<h3 class="h3_flt">Filtres</h3>   <!-- changer les div dans les button -->
+			<h3 class="h3_filtres">Filtres</h3>   <!-- changer les div dans les button -->
 			
 			<div class="ctn_button">
-				<button name="Economique" type="button">
+				<button class="btn_filtre" name="Economique" type="button">
 					<i class="fas fa-money-bill-wave ftn_icon_filtre"></i>
 					Economique
 				</button>
 
-				<button name="Familial" type="button">
+				<button class="btn_filtre" name="Familial" type="button">
 					<i class="fas fa-child ftn_icon_filtre"></i>
 					Familial
 				</button>
 
-				<button class="btn_romantique" name="Romantique" type="button">
+				<button class="btn_filtre" class="btn_romantique" name="Romantique" type="button">
 					<i class="fas fa-heart ftn_icon_filtre"></i>
 					Romantique
 				</button>
 
-				<button name="Animaux" type="button">
+				<button class="btn_filtre" name="Animaux" type="button">
 					<i class="fas fa-dog ftn_icon_filtre"></i>
 					Animaux autorisés
 				</button>	
 			</div>
+		
+			<p class="p_filtres"><i class="fas fa-info "></i>Plus de 500 logements sont disponibles dans cette ville</p>
 		</section>
 
-		<p class="p_500"><i class="fas fa-info "></i>Plus de 500 logements sont disponibles dans cette ville</p>
-
-		<div class="sect_tout_hebergement" id="ancre_heberg">
+		<div class="div_tout_hebergement" id="ancre_heberg">
 			
-			<section class="box_hebergement">   <!-- revoir et changer le format des images, changement de aside a article -->
+			<section class="section_hebergement">   <!-- revoir et changer le format des images, changement de aside a article -->
 
-				<h2 class="text_hebergement h2_marg">Hébergements à Marseille</h2>
+				<h2 class="text_hebergement h2_marge">Hébergements à Marseille</h2>
 
 				<article class="ctn_vignettes_hebergement">
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/aubergecannebiere.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -96,7 +97,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/hotelport.jpg" alt="Hôtel du port" title="Hôtel du port" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -107,7 +108,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/hotelmouettes.jpg" alt="Hôtel Les mouettes" title="Hôtel Les mouettes" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -118,7 +119,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/hotelmer.jpg" alt="Hôtel de la mer" title="Hôtel de la mer" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -129,7 +130,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/aubergepanier.jpg" alt="Auberge Le Panier" title="Auberge Le Panier" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -140,7 +141,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_hebergement">
 							<img src="hebergement/hotelamina.jpg" alt="Hôtel chez Amina" title="Hôtel^chez Amina" class="img_hebergement">
 							<figcaption class="figcap_hebergement">
@@ -156,11 +157,14 @@
 
 			</section>
 
-			<section class="box_populaire">   <!-- revoir et changer le format des images, changement de aside a article -->
+			<section class="section_populaire">   <!-- revoir et changer le format des images, changement de aside a article -->
 			
-				<div class="titre_populaire"><h2 class="h2_marg">Les plus populaires</h2><i class="fas fa-chart-line icon-black"></i></div>
-				<div class="ctn_populaire">
-					<a class="lien_vign" href="">
+				<div class="titre_populaire">
+					<h2 class="h2_marge">Les plus populaires</h2><i class="fas fa-chart-line icon-black"></i>
+				</div>
+
+				<div class="ctn_vignette_populaire">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/hotelmatin.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -171,7 +175,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/coeureau.jpg" alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau Chambres d'hôtes" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -182,7 +186,7 @@
 						</figure>
 					</a>
 				
-					<a class="lien_vign" href="">
+					<a class="lien_vignette" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/hotelblanc.jpg" alt="Hôtel Tout bleu et blanc" title="Hôtel Tout bleu et blanc" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -197,37 +201,38 @@
 			</section>
 		</div>
 
-		
+		<section class="section_activite">
 
-		<section class="box_activité">
-			<h2 class="h2_act" id="ancre_act">Activités à Marseille</h2>
+			<h2 class="h2_activite" id="ancre_act">Activités à Marseille</h2>
 
-			<div class="ctn_activité">
+			<div class="ctn_vignette_activite">
 
-				<div class="ctn_act_left">	
-					<a class="lien_vign" href="">
-						<figure class="vignette_act1">
-							<img src="activité/port.jpg" alt="Vieux Port" title="Vieux Port" class="img_act1">
-							<figcaption class="figcap_activité">
+				<div class="ctn_activite_gauche">
+
+					<a class="lien_vignette" href="">
+						<figure class="vignette_activite1">
+							<img src="activité/port.jpg" alt="Vieux Port" title="Vieux Port" class="img_activite">
+							<figcaption class="figcap_activite">
 								<h3>Vieux Port</h3>
 							</figcaption>
 						</figure>
 					</a>
 				
-					<div class="box_activité2">
-						<a class="lien_vign" href="">
-							<figure class="vignette_act2 margin_right">
-								<img src="activité/fort.jpg" alt="Fort de Pomègues" title="Fort de Pomègues" class="img_act2 ">
-								<figcaption class="figcap_activité">
+					<div class="div_ctn_activite">
+
+						<a class="lien_vignette" href="">
+							<figure class="vignette_activite2 margin_right">
+								<img src="activité/fort.jpg" alt="Fort de Pomègues" title="Fort de Pomègues" class="img_activite">
+								<figcaption class="figcap_activite">
 									<h3>Fort de Pomègues</h3>
 								</figcaption>
 							</figure>
 						</a>
 
-						<a class="lien_vign" href="">
-							<figure class="vignette_act3">
-								<img src="activité/iles.jpg" alt="Iles du Frioul" title="Iles du Frioul" class="img_act3">
-								<figcaption class="figcap_activité">
+						<a class="lien_vignette" href="">
+							<figure class="vignette_activite3">
+								<img src="activité/iles.jpg" alt="Iles du Frioul" title="Iles du Frioul" class="img_activite">
+								<figcaption class="figcap_activite">
 									<h3>Iles du Frioul</h3>
 								</figcaption>
 							</figure>
@@ -235,30 +240,32 @@
 					</div>
 				</div>
 
-				<div class="ctn_act_right">
-					<a class="lien_vign" href="">
-						<figure class="vignette_act1">
-							<img src="activité/parcnational.jpg" alt="Parc National des Calanques" title="Parc National des Calanques" class="img_act1">
-							<figcaption class="figcap_activité">
+				<div class="ctn_activite_droit">
+
+					<a class="lien_vignette" href="">
+						<figure class="vignette_activite1">
+							<img src="activité/parcnational.jpg" alt="Parc National des Calanques" title="Parc National des Calanques" class="img_activite">
+							<figcaption class="figcap_activite">
 								<h3>Parc National des Calanques</h3>
 							</figcaption>
 						</figure>
 					</a>
 				
-					<div class="box_activité2">
-						<a class="lien_vign" href="">
-							<figure class="vignette_act3">
-								<img src="activité/notredame.jpg" alt="Notre-Dame-De-La-Garde" title="Notre-Dame-De-La-Garde" class="img_act3">
-								<figcaption class="figcap_activité">
+					<div class="div_ctn_activite">
+						
+						<a class="lien_vignette" href="">
+							<figure class="vignette_activite3">
+								<img src="activité/notredame.jpg" alt="Notre-Dame-De-La-Garde" title="Notre-Dame-De-La-Garde" class="img_activite">
+								<figcaption class="figcap_activite">
 									<h3>Notre-Dame-De-La-Garde</h3>
 								</figcaption>
 							</figure>
 						</a>
 
-						<a class="lien_vign" href="">
-							<figure class="vignette_act2">
-								<img src="activité/parclongchamp.jpg" alt="Parc Longchamp" title="Parc Longchamp" class="img_act2">
-								<figcaption class="figcap_activité">
+						<a class="lien_vignette" href="">
+							<figure class="vignette_activite2">
+								<img src="activité/parclongchamp.jpg" alt="Parc Longchamp" title="Parc Longchamp" class="img_activite">
+								<figcaption class="figcap_activite">
 									<h3>Parc Longchamp</h3>
 								</figcaption>
 							</figure>
@@ -274,8 +281,8 @@
 
 		<section>
 
-			<h3 class="foot_h3">A propos</h3>
-				<ul class="foot_list">
+			<h3 class="h3_footer">A propos</h3>
+				<ul class="list_footer">
 					<li>Fonctionnement du site</li>
 					<li>Conditions génerales de vente</li>
 					<li>Données et confidentialité</li>
@@ -283,16 +290,16 @@
 		</section>
 
 		<section>
-			<h3 class="foot_h3">Nos hébergements</h3>		
-				<ul class="foot_list">
+			<h3 class="h3_footer">Nos hébergements</h3>		
+				<ul class="list_footer">
 					<li>Charte qualité</li>
 					<li>Soumettre votre hôtel</li>
 				</ul>
 		</section>
 				
 		<section>	
-			<h3 class="foot_h3">Assistance</h3>	
-				<ul class="foot_list">
+			<h3 class="h3_footer">Assistance</h3>	
+				<ul class="list_footer">
 					<li>Centre d'aide</li>
 					<li>Nous contacter</li>
 				</ul>
