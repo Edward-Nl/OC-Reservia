@@ -37,13 +37,11 @@
 
 			<form method="post">    <!-- champ de recherche -->	
 				<label class="icon_local" for="chmp_search"><i class="fas fa-map-marker-alt"></i></label>
-				<input class="champ_recherche" type="text" name="recherche" id="chmp_search" value="  Marseille, France">
-				<div>
-					<input class="btn_recherche" type="submit" value="Rechercher" id="btn_search" />
-				</div>
-				<div>
-					<button class="btn_loupe" type="submit"><i class="fas fa-search"></i></button>
-				</div>
+				<input class="champ_recherche" type="text" name="recherche" id="chmp_search" value=" Marseille, France">
+				<button class="btn_champ_recherche" type="submit">
+					<span class="btn_recherche">Rechercher</span>
+					<i class="fas fa-search btn_loupe"></i>
+				</button>
 				
 			</form>
 
@@ -78,7 +76,7 @@
 		</section>
 
 		<p class="p_filtres"><i class="fas fa-info "></i>Plus de 500 logements sont disponibles dans cette ville</p>
-		
+
 		<div class="div_tout_hebergement" id="ancre_heberg">
 			
 			<section class="section_hebergement">   <!-- revoir et changer le format des images, changement de aside a article -->
@@ -165,7 +163,7 @@
 				</div>
 
 				<div class="ctn_vignette_populaire">
-					<a class="lien_vignette" href="">
+					<a class="lien_vignette lien_populaire" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/hotelmatin.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -176,7 +174,7 @@
 						</figure>
 					</a>
 
-					<a class="lien_vignette" href="">
+					<a class="lien_vignette lien_populaire" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/coeureau.jpg" alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau Chambres d'hôtes" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -187,7 +185,7 @@
 						</figure>
 					</a>
 				
-					<a class="lien_vignette" href="">
+					<a class="lien_vignette lien_populaire" href="">
 						<figure class="vignette_populaire">
 							<img src="hebergement/hotelblanc.jpg" alt="Hôtel Tout bleu et blanc" title="Hôtel Tout bleu et blanc" class="img_populaire">
 							<figcaption class="figcap_populaire">
@@ -280,7 +278,7 @@
 
 	<footer>  <!-- --> 
 
-		<section>
+		<section class="section_foot">
 
 			<h3 class="h3_footer">A propos</h3>
 				<ul class="list_footer">
@@ -290,7 +288,7 @@
 				</ul>
 		</section>
 
-		<section>
+		<section class="section_foot">
 			<h3 class="h3_footer">Nos hébergements</h3>		
 				<ul class="list_footer">
 					<li>Charte qualité</li>
@@ -298,7 +296,7 @@
 				</ul>
 		</section>
 				
-		<section>	
+		<section class="section_foot">	
 			<h3 class="h3_footer">Assistance</h3>	
 				<ul class="list_footer">
 					<li>Centre d'aide</li>

@@ -8,20 +8,16 @@ header, main{
 			/* Header */
 header{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
 	height: 85px;
-	width: auto;
 }
 .list_nav{
 	display: flex;
-	flex-direction: row;
 	align-items: baseline;
 }
-li{
+.li_nav{
 	display: flex;
-	flex-wrap: wrap;
 	list-style-type: none;
 	padding-right: 32px;
 	padding-left: 32px;
@@ -67,8 +63,8 @@ form{
 	font-weight: bold;
 	font-size: 1.1em;
 }
-.btn_recherche{
-	border: 1px white solid;
+.btn_champ_recherche{
+	border: none;
 	border-top-right-radius: 9px;
 	border-bottom-right-radius: 9px;
 	width: 132px;
@@ -77,7 +73,7 @@ form{
 	color: white;
 	font-size: 1.1em;
 }
-.btn_loupe{
+i.btn_loupe{
 	display: none;
 }
 .btn_recherche, .champ_recherche, button:focus{
@@ -86,7 +82,6 @@ form{
 						/* Bouton filtre  */
 .section_filtres{
 	display: flex;
-	flex-direction: row;
 	align-items: baseline;
 	flex-wrap: wrap;
 	margin-top: 30px;
@@ -96,10 +91,9 @@ form{
 }
 .ctn_button{
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 }
-button{
+.btn_filtre{
 	margin-right: 25px;
 	padding-right: 18px;
 	border: 2px #d9d9d9 solid;
@@ -107,7 +101,6 @@ button{
 	background-color: white;
 	height: 48px;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	padding-left: 0;
 	font-weight: bold;
@@ -120,7 +113,6 @@ i.ftn_icon_filtre{
 	width: 48px;
 	border-radius: 48px;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	margin-right: 13px;
@@ -154,8 +146,6 @@ i.ftn_icon_filtre{
 .div_tout_hebergement{  
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	align-content: space-around;
 }
 .h2_marge{
 	margin-bottom: 5px;
@@ -183,7 +173,6 @@ figure{   /* ombre commune a toute les figure du site */
 .ctn_vignettes_hebergement{			
 	margin-left: 25px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 }
 .vignette_hebergement{
@@ -198,14 +187,10 @@ figure{   /* ombre commune a toute les figure du site */
 	width: 235px;
 	height: 114px;
 	object-fit: cover;
-	margin: 0;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
 .figcap_hebergement{
-	width: 235px;
-	height: 76px;
-	margin: 0;
 	line-height: 35%;
 	font-size: 0.9em;
 }				
@@ -244,11 +229,9 @@ figure{   /* ombre commune a toute les figure du site */
 	border-radius: 18px;
 	background-color: white;
 	display: flex;
-	flex-direction: row;
 }
 .img_populaire{
 	width: 127px;
-	height: 134px;
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -261,32 +244,17 @@ figure{   /* ombre commune a toute les figure du site */
 .h2_activite{       /* ACTIVITES  */
 	margin-top: 65px;
 }
-.section_activite{
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin-bottom: 17px;
-}
 .ctn_vignette_activite{
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 }
 .ctn_activite_gauche, .ctn_activite_droit{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-.div_ctn_activite{
-	display: flex;
-	flex-direction: column;
 }
 .vignette_activite1, .vignette_activite2, .vignette_activite3{
 	width: 301px;
 	border: 1px #f2f2f2 solid;
 	border-radius: 18px;
-	display: block;
 	margin: 0;
 	margin-bottom: 43px;
 }
@@ -311,15 +279,12 @@ figure{   /* ombre commune a toute les figure du site */
 }
 .figcap_activite{
 	height: 55px;
-	padding-bottom: 25px;
 	padding-left: 20px;
-	margin: 0;
 }
 			/* Footer*/
 footer{
 	background-color: #f2f2f2;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 0;
@@ -329,11 +294,8 @@ footer{
 }
 .list_footer{
 	margin-bottom: 30px;
-	margin-left: -70px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+	padding: 0;
+	list-style-type: none;
 	line-height: 2;
 }
 		/* MEDIA QUERIES */
@@ -342,9 +304,14 @@ footer{
 		height: auto;
 		flex-wrap: wrap;
 		align-items: center;
+		margin: 0;
+	}
+	main{
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	.img_logo{
-		padding-left: 25px;
+		padding-left: 20px;
 	}
 	ul.list_nav{
 		padding-left: 0;
@@ -355,32 +322,29 @@ footer{
 		border-top: none;
 		border-right: 2px #deebff solid;
 	}
-	button{
+	.btn_filtre{
 		margin-bottom: 13px;
 	}
 	.div_tout_hebergement{
 		flex-direction: column-reverse;
 	}
 	.section_populaire{
-		flex-direction: row;
 		max-width: 880px;
-		width: 100%;
-		flex-wrap: wrap;
-		height: 100%;
 		margin-bottom: 45px;
 	}
 	.titre_populaire{
-		margin-left: 30px;
-		width: 334px;
+		margin-left: 40px;
+		width: 90%;
+		justify-content: space-between;
 	}
-	.ctn_vignette_populaire{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin-left: 25px;
+	.lien_populaire {
+		width: 100%;
 	}
 	.vignette_populaire{
-		margin: 15px;
+		width: auto;
+	}
+	.img_populaire{
+		width: 30%;
 	}
 	.section_hebergement{
 		width: 100%;
@@ -391,6 +355,9 @@ footer{
 	}
 	.lien_vignette{
 		margin: auto;
+	}
+	.section_activite{
+		max-width: 880px;
 	}
 	.h2_activite{
 		margin-left: 40px;
@@ -404,8 +371,7 @@ footer{
 		margin: auto;
 	}
 	footer{
-		justify-content: space-between;
-		padding-left: 50px;
+		justify-content: space-around;
 	}
 }
 
@@ -420,8 +386,7 @@ footer{
 		position: sticky;
 		top: 0;
 		background-color: white;
-		margin-left: 0;
-		height: 148px;
+		height: 132px;
 		align-items: flex-start;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -436,7 +401,7 @@ footer{
 		padding: 0;
 	}
 	.list_nav{
-		border-top: none;
+		margin: 0;
 	}
 	.sinscrire{
 		position: absolute;
@@ -450,7 +415,6 @@ footer{
 		width: 50%;
 		padding-bottom: 15px;
 		border-bottom: 3px #0065fc solid;
-		border-top: none;
 		border-right: none;
 	}
 	.bord_gris{
@@ -460,25 +424,19 @@ footer{
 		max-width: 333px;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
-		align-items: normal;
 	}
 	.btn_recherche{
 		display: none;
 	}
-	.btn_loupe{
-		display: flex;
-		align-items: center;
-		border: none;
+	.btn_champ_recherche{
 		border-radius: 20px;
 		width: 52px;
 		height: 50px;
-		background-color: #0065fc;
-		color: white;
-		font-size: 1.1em;
-		padding: 0;
-		margin: 0;
 	}
-	button{
+	i.btn_loupe{
+		display: flex;
+	}
+	.btn_filtre{
 		margin-right: 10px;
 	}
 	.btn_romantique{
@@ -497,25 +455,27 @@ footer{
 	}
 	.section_populaire{
 		border-radius: 0;
+		margin-bottom: 0;
+		align-items: center;
 	}
-	.ctn_vignette_populaire{
-		margin-left: 0;
-		width: 100%;
+	.titre_populaire{
+		width: 334px;
 	}
-	.h2_marge, .text_hebergement{
+	.ctn_vignette_populaire, .h2_marge, .text_hebergement{
 		margin-left: 0;
+	}
+	.lien_populaire{
+		width: auto;
 	}
 	.vignette_populaire{
-		margin-left: 20px;
-		margin-bottom: 10px;
+		margin: 15px;
+	}
+	.img_populaire{
+		width: 127px;
 	}
 	.section_hebergement{
 		align-items: center;
 		background-color: white;
-	}
-	.ctn_vignettes_hebergement{
-		flex-direction: column;
-		margin-left: 0;
 	}
 	.vignette_hebergement{
 		margin-bottom: 10px;
@@ -528,26 +488,22 @@ footer{
 		width: auto;
 	}
 	.h2_activite{
-		padding-left: 25px;
-	}
-	.ctn_vignette_activite{
-		flex-direction: column;
+		margin-left: 25px;
+		margin-top: 30px;
 	}
 	.vignette_activite1, .vignette_activite2, .vignette_activite3{
 		height: 190px;
 		margin-bottom: 25px;
 		margin-right: 0;
 	}
-
 	footer{
 		flex-direction: column;
 		padding-bottom: 20px;
-		padding-left: 0;
 	}
 	.h3_footer{
 		margin-left: 20px;
 	}
 	.list_footer{
-		margin-left: -55px;
+		margin-left: 20px;
 	}
 }
