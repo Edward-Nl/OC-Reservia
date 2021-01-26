@@ -486,10 +486,15 @@ footer{
 		margin-bottom: 25px;
 		margin-left: -20px;
 		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.h2_activite{
-		margin-left: 25px;
+		margin: 0;
+		width: 334px;
 		margin-top: 30px;
+		margin-bottom: 20px;
 	}
 	.vignette_activite1, .vignette_activite2, .vignette_activite3{
 		height: 190px;
