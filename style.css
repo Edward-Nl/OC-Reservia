@@ -5,7 +5,6 @@ body{
 header, main{
 	margin-left: 50px;
 }
-			/* Header */
 header{
 	display: flex;
 	justify-content: space-between;
@@ -30,8 +29,7 @@ header{
 a{
 	text-decoration: none;
 	color: inherit;
-}                          /* Fin de header */
-			
+}
 						   /* Champ de recherche */
 h1{
 	margin-bottom: 10px;
@@ -78,8 +76,7 @@ i.btn_loupe{
 }
 .btn_recherche, .champ_recherche, button:focus{
 	outline: 0;
-	}					/* fin de recherche  */
-						/* Bouton filtre  */
+	}				/* Bouton filtre  */
 .section_filtres{
 	display: flex;
 	align-items: baseline;
@@ -129,7 +126,6 @@ i.ftn_icon_filtre{
 	padding-left: 20px;
 	padding-right: 0;
 }
-					/*Fin bouton filtre */
 .fa-info{
 	border: 0.01em #d9d9d9 solid;
 	padding: 6px 10px 6px 10px;
@@ -154,7 +150,6 @@ i.ftn_icon_filtre{
 figure{   /* ombre commune a toute les figure du site */
 	box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.1);
 }
-						/* box h2 vignette et p de hebergement */
 .section_hebergement{  
 	background-color: #f2f2f2;
 	width: 70%;
@@ -203,7 +198,6 @@ figure{   /* ombre commune a toute les figure du site */
 .grey_star{
 	color: #d9d9d9;
 }
-				/* Qui contient les vignette populaire */
 .section_populaire{
 	display: flex;
 	flex-direction: column;
@@ -288,6 +282,7 @@ footer{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 0;
+	padding-right: 200px;
 }
 .h3_footer{
 	margin-top: 45px;
@@ -372,6 +367,7 @@ footer{
 	}
 	footer{
 		justify-content: space-around;
+		padding: 0;
 	}
 }
 
@@ -450,8 +446,7 @@ footer{
 		margin-left: -20px;
 	}
 	.vignette_populaire, .vignette_hebergement, .vignette_activite1, .vignette_activite2, .vignette_activite3, .img_hebergement, .img_activite, .h2_marge, .text_hebergement{
-		max-width: 324px;
-		width: 100%;
+		width: 324px;
 	}
 	.section_populaire{
 		border-radius: 0;
