@@ -507,3 +507,14 @@ footer{
 		margin-left: 20px;
 	}
 }
+@media screen and (max-width: 350px){
+	.vignette_populaire, .vignette_hebergement, .vignette_activite1, .vignette_activite2, .vignette_activite3, .img_hebergement, .img_activite, .h2_marge, .text_hebergement{
+		width: 280px;
+	}
+	.titre_populaire, .h2_activite{
+		width: auto;
+	}
+	form{
+		width: 100%;
+	}
+}
