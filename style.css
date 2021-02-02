@@ -70,6 +70,7 @@ form{
 	background-color: #0065fc;
 	color: white;
 	font-size: 1.1em;
+	font-family: Raleway;
 }
 i.btn_loupe{
 	display: none;
@@ -102,6 +103,7 @@ i.btn_loupe{
 	padding-left: 0;
 	font-weight: bold;
 	font-size: 1.1em;
+	font-family: Raleway;
 }
 i.ftn_icon_filtre{
 	background-color: #deebff;
@@ -125,6 +127,7 @@ i.ftn_icon_filtre{
 	flex-direction: row-reverse;
 	padding-left: 20px;
 	padding-right: 0;
+	font-family: Raleway;
 }
 .fa-info{
 	border: 0.01em #d9d9d9 solid;
